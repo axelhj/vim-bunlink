@@ -135,7 +135,7 @@ function! s:switch_buffer()
             endif
 
             " Don't load buffers or show unlisted ones.
-            if !bufexists(l:targetbuf) || !bufloaded(l:targetbuf) || !buflisted(l:targetbuf)
+            if !bufexists(l:targetbuf)
                 continue
             endif
 
